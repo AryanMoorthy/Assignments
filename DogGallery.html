@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            background-color: blanchedalmond;
+            margin : 0;
+            width : 100%
+        }
+        .container
+        {
+            display : grid;
+            width : 90%;
+            grid-template-columns : repeat(3,1fr);
+            width : 100%;
+            background-color: rgb(255, 221, 205);
+            gap : 15px;
+        }
+        img
+        {
+            width : 80%;
+            /* width: 400px; */
+            height: auto;
+            border-radius : 8px;
+            margin : 10px;
+            /* border : 5px solid black; */
+            box-shadow: 5px 5px 15px  rgba(227, 122, 230, 0.839);
+            
+            /* background-color : lightgrey; */
+        }
+        img:hover{
+            border : 5px solid black;
+            box-shadow: 15px 15px 30px rgba(227, 122, 230, 0.839);
+        }
+        @media (max-width : 900px)
+        {
+            h1{
+            background-color: blanchedalmond;
+            margin : 0;
+        }
+        .container
+        {
+            display : grid;
+            
+            grid-template-columns : repeat(2,1fr);
+            background-color: rgb(255, 221, 205);
+            gap : 15px;
+        }
+        img
+        {
+            width : 80%;
+            height: 250px;
+            border-radius : 8px;
+            margin : 10px;
+            /* border : 5px solid black;  */
+            box-shadow: 5px 5px 15px  rgba(227, 122, 230, 0.839);
+            
+            /* background-color : lightgrey; */
+        }
+        img:hover{
+            border : 5px solid black;
+            box-shadow: 15px 15px 30px rgba(227, 122, 230, 0.839);
+        }
+        }
+        @media (max-width : 600px)
+        {
+            h1{
+            background-color: blanchedalmond;
+            margin : 0;
+        }
+        .container
+        {
+            display : grid;
+            grid-template-columns : 1fr;
+            background-color: rgb(255, 221, 205);
+            gap : 15px;
+        }
+        img
+        {
+            width : 80%;
+            border-radius : 8px;
+            margin : 10px;
+            /* border : 5px solid black; */
+            box-shadow: 5px 5px 15px  rgba(227, 122, 230, 0.839);
+            
+            /* background-color : lightgrey; */
+        }
+        img:hover{
+            border : 5px solid black;
+            box-shadow: 15px 15px 30px rgba(227, 122, 230, 0.839);
+        }
+        }
+    </style>
+</head>
+<body>
+    
+<h1>Dog Gallery</h1>
+<div class="container">
+    <div class="img">
+        <img src="https://bowwowinsurance.com.au/wp-content/uploads/2018/10/australian-kelpie-isolated-thumb-700x700.jpg" alt="">
+    </div>
+    <div class="img">
+        <img src="https://bowwowinsurance.com.au/wp-content/uploads/2018/06/australian-shepherd-700x700.jpg" alt="">
+    </div>
+    <div class="img">
+        <img src="https://bowwowinsurance.com.au/wp-content/uploads/2018/10/airedale-terrier-700x700.jpg" alt="">
+    </div>
+    <div class="img">
+        <img src="https://bowwowinsurance.com.au/wp-content/uploads/2018/10/akita-700x700.jpg" alt="">
+    </div>
+    <div class="img">
+        <img src="https://bowwowinsurance.com.au/wp-content/uploads/2018/10/australian-aussie-terrier-700x700.jpg" alt="">
+    </div>
+    <div class="img">
+        <img src="https://bowwowinsurance.com.au/wp-content/uploads/2018/10/alaskan-malamute-700x700.jpg" alt="">
+    </div>
+    <div class="img">
+        <img src="https://bowwowinsurance.com.au/wp-content/uploads/2018/11/american-bulldog-700x700.jpg" alt="">
+    </div>
+    <div class="img">
+        <img src="https://bowwowinsurance.com.au/wp-content/uploads/2018/10/american-staffordshire-terrier-amstaff-american-staffy-700x700.jpg" alt="">
+    </div>
+    <div class="img">
+        <img src="https://bowwowinsurance.com.au/wp-content/uploads/2018/10/blue-heeler-australian-cattledog-700x700.jpg" alt="">
+    </div>
+</div>
+</body>
+</html>
